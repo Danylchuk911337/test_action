@@ -47,6 +47,9 @@ jobs:
           name: java-app
           path: .
       
+      - name: Show where the JAR is
+        run: ls -lh
+
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
