@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'action-github'
           slot-name: 'Production'
-          package: './*.jar'
+          package: '*.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_423AF2B6A9954EB38C7F252B9426A5CC }}
