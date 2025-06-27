@@ -26,7 +26,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install
-        
+
       - name: Test
         run: mvn test
 
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'action-github'
           slot-name: 'Production'
-          package: '*.war'
+          package: 'java-app/*.war'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_57AC930A4022491FAE99E2BC3752EAA1 }}
