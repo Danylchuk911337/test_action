@@ -43,6 +43,9 @@ jobs:
         with:
           name: java-app
       
+      - name: Move JAR to root
+        run: mv jar-app/dev.jar dev.jar
+      
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
